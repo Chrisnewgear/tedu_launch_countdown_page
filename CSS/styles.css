@@ -221,7 +221,6 @@ section{
 
 section .countdown{
     padding: 0px;
-
 }
 
 
@@ -229,6 +228,8 @@ section .countdown{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin: 0;
 }
 
@@ -236,7 +237,7 @@ section .countdown{
 .simply-section{
     width: 180px;
     height: 180px;
-    margin: 0 20px;
+    margin: 20px 20px;
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -270,11 +271,6 @@ section .countdown{
     background: url(/Images/contact_form_bg4.jpg);
     background-size: cover;
 }
-
-
-
-
-
 
 .formulario{
     padding: 75px 50px;
