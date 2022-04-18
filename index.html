@@ -6,10 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/Images/TEDU-ICO.ico">
     <title>TEDU HOME</title>
-    <!-- <link rel="stylesheet" href="CSS/countdown.css" type="text/css"> -->
+    <script src="https://kit.fontawesome.com/4e7613d2d6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="CSS/styles.css" type="text/css">
-
-    <script src="https://kit.fontawesome.com/0854984c4f.js" crossorigin="anonymous"></script>
     <script src="JS/scrollreveal.js"></script>
 </head>
 <body>
@@ -42,7 +40,7 @@
         </div>
     </section>
 
-    <section class="contact" id="contact">
+    <section class="contact" id="contact" action="enviar.php" method="post">
         <div class="title">
             <h2 class="titleText"><span>I</span>nscríbete</h2>
             <p>Reserva tu asistencia para nuestro lanzamiento en Ecuador</p>
@@ -55,8 +53,9 @@
             <div class="formulario__grupo" id="grupo__nombre">
                 <label for="nombre" class="formulario__label">Nombre y apellidos</label>
                     <div class="formulario_grupo-input">
-                        <input type="text" class="formulario__input" id="nombre" name="nombre" placeholder="Nombre completo*" required>
+                        <input type="text" class="formulario__input" id="nombre" name="nombre" placeholder="Nombre completo*" >
                         <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                        
                     </div>
                 <p class="formulario__input-error">El nombre tiene que ser de 4 a 16 digitos y solo puede contener numeros, letras y guion bajo</p>
             </div>
@@ -65,18 +64,18 @@
             <div class="formulario__grupo" id="grupo__telefono">
                 <label for="telefono" class="formulario__label">Teléfono</label>
                     <div class="formulario_grupo-input">
-                        <input type="text" class="formulario__input" id="telefono" name="telefono" placeholder="Teléfono*" required>
+                        <input type="text" class="formulario__input" id="telefono" name="telefono" placeholder="Teléfono*" >
                         <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
                     </div>
-                <p class="formulario__input-error">El telefono solo puede congtener numeros y máximo 10 dígitos</p>
+                <p class="formulario__input-error">El telefono solo puede contener numeros y máximo 10 dígitos</p>
             </div>
 
 
-            <!-- GRUPO MAIL -->
-            <div class="formulario__grupo" id="grupo__mail">
-                <label for="mail" class="formulario__label">Email</label>
+            <!-- GRUPO CORREO -->
+            <div class="formulario__grupo" id="grupo__correo">
+                <label for="correo" class="formulario__label">Email</label>
                     <div class="formulario_grupo-input">
-                        <input type="text" class="formulario__input" id="mail" name="mail" placeholder="Email*" required>
+                        <input type="text" class="formulario__input" id="correo" name="correo" placeholder="Email*" >
                         <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
                     </div>
                 <p class="formulario__input-error">El correo solo puede tener letras, numeros, puntos, guiones, @ y guion bajo.</p>
@@ -86,10 +85,10 @@
             <div class="formulario__grupo" id="grupo__ciudad">
                 <label for="ciudad" class="formulario__label">Ciudad</label>
                     <div class="formulario_grupo-input">
-                        <input type="text" class="formulario__input" id="ciudad" name="ciudad" placeholder="Tu ciudad*" required>
+                        <input type="text" class="formulario__input" id="ciudad" name="ciudad" placeholder="Tu ciudad*" >
                         <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
                     </div>
-                <p class="formulario__input-error">La ciudad solo puede tener letras de la A a la Z</p>
+                <p class="formulario__input-error">La ciudad solo puede tener letras de la A a la Z y máximo 16 caracteres</p>
             </div>
 
             <!-- TERMINOS Y CONDICIONES -->
@@ -101,7 +100,7 @@
 			</div>
 
 			<div class="formulario__mensaje" id="formulario__mensaje">
-				<p><i class="fa-solid fa-triangle-exclamation"></i><b>Error: Por favor rellene el formulario correctamente</b></p>
+				<p><i class="fa-solid fa-triangle-exclamation"></i><b>Error: Por favor rellene el formulario correctamente y acepte los términos y condiciones</b></p>
 			</div>
 
 			<div class="formulario__grupo-btn-enviar">
@@ -133,9 +132,11 @@
             <p>Copyright &copy; 2022 TEDU | All Rights Reserved</p>
         </div>
     </footer>
+    <script src="JS/validar_formulario.js"></script>
     <script src="JS/script.js"></script>
     <script src="JS/simplyCountdown.min.js"></script>
     <script src="JS/countdown.js"></script>
-    <!--<script src="JS/index.js"></script>-->
+    
+    <!-- <script src="JS/index.js"></script> -->
 </body>
 </html>

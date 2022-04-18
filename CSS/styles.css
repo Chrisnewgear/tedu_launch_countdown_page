@@ -13,10 +13,6 @@ p{
     color: #111;
     font-size: 20px;
 }
-/*
-body{
-    min-height: 1000px;
-}*/
 
 .banner{
     position: relative;
@@ -40,10 +36,6 @@ body{
     height: 180px;
 }
 
-
-/* .banner .content h2 span{
-    color: #e12a4c;
-} */
 
 .banner .content p{
     font-size: 1.1em;
@@ -264,7 +256,6 @@ section .countdown{
 
 }
 
-
 /*===============CONTACT FORM==================*/
 
 .contact{
@@ -310,15 +301,16 @@ section .countdown{
 }
 
 .formulario__input{
-	width: 100%;
-	background: #fff;
-	border: 2px solid #bcbcbc;
-	border-radius: 5px;
+    width: 100%;
+    background: #fff;
+    border: 2px solid #bcbcbc;
+    border-radius: 5px;
 	height: 45px;
 	line-height: 45px;
 	padding: 0 40px 0 10p;
 	transition: .3s ease all;
 }
+
 
 .formulario__input:focus{
 	border: 3px solid #0075FF;
@@ -330,30 +322,31 @@ section .countdown{
 	font-size: 12px;
 	margin-bottom: 0;
 	display: none;
-}
+}  
 
 .formulario__input-error-active{
 	display: block
 }
 
 .formulario__validacion-estado{
-	position: absolute;
-	right: 10px;
-	bottom: 15px;
-	z-index: 100;
-	font-size: 16px;
-	opacity: 0;
+    position: absolute;
+    margin-left: -30px;
+    margin-top: 15px;
+    z-index: 100;
+    font-size: 16px;
+    opacity: 0;
 }
-
+ 
 .formulario__checkbox{
 	margin-right: 5px;
 }
 
+
 .formulario__mensaje{
-	height: 45px;
-	line-height: 45px;
+	text-align: center;
+    height: 45px;
 	background: #F66868;
-	padding: 0 15px;
+	padding: 5px 15px;
     margin-bottom: 15px;
 	border-radius: 3px;
 	display: none;
@@ -413,7 +406,7 @@ section .countdown{
 
 /* ESTILOS PARA VALIDACION */
 
-.formulario__grupo-correcto .formulario__validacion-estado{
+ .formulario__grupo-correcto .formulario__validacion-estado{
 	color:#1ed12d;
 	opacity: 1;
 }
@@ -429,64 +422,9 @@ section .countdown{
 
 .formulario__grupo-incorrecto .formulario__input{
 	border: 3px solid #bb2929;
-}
-
-/*
-.contactForm .inputBox{
-    position: relative;
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.contactForm .inputBox input,
-.contactForm .inputBox textarea{
-    width: 100%;
-    border: 1px solid #555;
-    padding: 10px;
-    color: #111;
-    outline: none;
-    font-size: 16px;
-    font-weight: 300;
-    resize: none;
-}
-
-.contactForm .inputBox input[type="submit"]{
-    font-size: 1em;
-    color: #fff;
-    background-color: #e12a4c;
-    display: inline-block;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 2px;
-    transition: .4s;
-    max-width: 100px;
-    font-weight: 500;
-    border: none;
-    cursor: pointer;
-    box-shadow: 5px 5px 10px rgba(0,0,0, .85);;
-}
-.contactForm .inputBox input[type="submit"]:hover{
-    transform: scale(1.1);
-} */
+} 
 
 
-
-
-/*
-.copyrightText{
-    padding: 8px 40px;
-    border-top: 1px solid rgba(0, 0, 0, .1);
-    text-align: center;
-}
-
-.copyrightText p{
-    color: #333;
-}
-
-.copyrightText a{
-    color: #ff0157;
-    text-decoration: none;
-}*/
 
 footer .footer_div h2{
     color: #fff;
@@ -521,7 +459,7 @@ footer .footer_div h2{
         color: #111;
         font-size: 1.6em;
     }
-    .menuToggle{
+    /* .menuToggle{
         position: relative;
         width: 40px;
         height: 40px;
@@ -536,7 +474,7 @@ footer .footer_div h2{
         background-size: 30px;
         background-repeat: no-repeat;
         background-position: center;
-    }
+    } */
     header.sticky .menuToggle{
         filter: invert(1);
     }
