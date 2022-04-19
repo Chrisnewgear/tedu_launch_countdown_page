@@ -7,7 +7,7 @@
     $ciudad=$_POST['ciudad'];
 
     //DATOS PARA EL CORREO
-    $destinatario = "christianabrahmsanchez@gmail.com";
+    $destinatario = "christianabrahamsanchez@gmail.com";
     $asunto = "Contacto desde la web";
 
     $carta = "De: $nombre \n";
