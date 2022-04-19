@@ -322,7 +322,7 @@ section .countdown{
 	font-size: 12px;
 	margin-bottom: 0;
 	display: none;
-}  
+}
 
 .formulario__input-error-active{
 	display: block
@@ -336,7 +336,7 @@ section .countdown{
     font-size: 16px;
     opacity: 0;
 }
- 
+
 .formulario__checkbox{
 	margin-right: 5px;
 }
@@ -422,9 +422,7 @@ section .countdown{
 
 .formulario__grupo-incorrecto .formulario__input{
 	border: 3px solid #bb2929;
-} 
-
-
+}
 
 footer .footer_div h2{
     color: #fff;
