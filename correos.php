@@ -1,5 +1,5 @@
 <?php
-$destinatario = 'info@teduemprende.com'
+$destinatario = 'info@teduemprende.com';
 
 $nombre = $_POST['nombre'];
 $correo = $_POST['correo'];
