@@ -20,5 +20,5 @@ $asunto = 'Inscripción desde el sitio web';
 
 mail ($para, $asunto, utf8_decode($message), $header);
 
-header("Location:gracias.html");
+header("Location:index.html");
 ?>
