@@ -1,24 +1,21 @@
+
 <?php
-$name = $_POST['nombre'];
-$phone = $_POST['telefono'];
-$mail = $_POST['correo'];
-$city = $_POST['ciudad'];
+    //LLAMANDO A LOS CAMPOS
+    $nombre=$_POST['nombre'];
+    $telefono=$_POST['telefono'];
+    $correo=$_POST['correo'];
+    $ciudad=$_POST['ciudad'];
 
-$header = 'From: ' . $mail . " \r\n";
-$header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
-$header .= "Mime-Version: 1.0 \r\n";
-$header .= "Content-Type: text/plain";
+    //DATOS PARA EL CORREO
+    $destinatario = "christianabrahmsanchez@gmail.com";
+    $asunto = "Contacto desde la web";
 
-$message = "Este mensaje fue enviado por " . $nombre . " \r\n";
-$message .= "Su e-mail es: " . $correo . " \r\n";
-$message .= "Su telefono es: " . $telefono . " \r\n";
-$message .= "Su ciudad es: " . $ciudad . " \r\n";   
-$message .= "Enviado el " . date('d/m/Y', time());
+    $carta = "De: $nombre \n";
+    $carta .= "Correo: $correo \n";
+    $carta .= "Teléfono: $telefono \n";
+    $carta .= "Ciudad: $ciudad";
 
-$para = 'info@teduemprende.com';
-$asunto = 'Inscripción desde el sitio web';
-
-mail ($para, $asunto, utf8_decode($message), $header);
-
-header("Location:index.html");
+    //ENVIANDO MENSAJE
+    mail($destinatario, $asunto, $carta);
+    header('Location:index.html')
 ?>

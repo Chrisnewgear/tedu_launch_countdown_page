@@ -46,7 +46,7 @@
             <p>Reserva tu asistencia para nuestro lanzamiento en Ecuador</p>
         </div>
 
-        <form class="formulario" id="formulario" action="correos.php" method="POST">
+        <form action="enviar.php" method="POST" class="formulario" id="formulario">
             <h3>Formulario de inscripción</h3>
 
             <!-- GRUPO NOMBRE -->
@@ -55,7 +55,6 @@
                     <div class="formulario_grupo-input">
                         <input type="text" class="formulario__input" id="nombre" name="nombre" placeholder="Nombre completo*" >
                         <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
-                        
                     </div>
                 <p class="formulario__input-error">El nombre tiene que ser de 4 a 16 digitos y solo puede contener numeros, letras y guion bajo</p>
             </div>
@@ -107,7 +106,6 @@
 				<button type="submit" class="formulario__btn">Enviar</button>
 				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente</p>
 			</div>
-            
         </form>
     </section>
 
