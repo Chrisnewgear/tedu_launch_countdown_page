@@ -8,7 +8,6 @@
     <title>TEDU HOME</title>
     <script src="https://kit.fontawesome.com/4e7613d2d6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="CSS/styles.css" type="text/css">
-    <script src="JS/scrollreveal.js"></script>
 </head>
 <body>
     <header>
@@ -46,8 +45,7 @@
             <p>Reserva tu asistencia para nuestro lanzamiento en Ecuador</p>
         </div>
 
-        <!-- <form action="enviar.php" method="post" class="formulario" > -->
-        <form action="enviar.php" method="post" class="formulario" id="formulario">
+        <form action="https://formsubmit.co/csanchez@tedu.ec" method="post" class="formulario" id="form">
              <h3>Formulario de inscripción</h3>
 
             <!-- GRUPO NOMBRE -->
@@ -104,7 +102,7 @@
 			</div>
 
 			<div class="formulario__grupo-btn-enviar">
-				<input type="submit" class="formulario__btn"></input>
+				<button type="submit" class="formulario__btn" id="btnSend">Enviar</button>
 				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente</p>
 			</div>
         </form>
@@ -135,6 +133,7 @@
     <script src="JS/sticky_menu.js"></script>
     <script src="JS/simplyCountdown.min.js"></script>
     <script src="JS/countdown.js"></script>
+    <!-- <script src="JS/validacion.js"></script> -->
 
     <!-- <script src="JS/index.js"></script> -->
 </body>
