@@ -30,9 +30,9 @@
         countUp: false
 });
 
-// Also, you can init with already existing Javascript Object.
+/* Also, you can init with already existing Javascript Object.
 let myElement = document.querySelector('.my-countdown');
-simplyCountdown(myElement, { /* options */ });
+simplyCountdown(myElement, { /* options */ /*});*/
 
-let multipleElements = document.querySelectorAll('.my-countdown');
-simplyCountdown(multipleElements, { /* options */ });
+/*let multipleElements = document.querySelectorAll('.my-countdown');
+simplyCountdown(multipleElements, { /* options */ /*}); */
