@@ -7,7 +7,7 @@
     $ciudad=$_POST['ciudad'];
 
     //DATOS PARA EL CORREO
-    $destinatario = "christianabrahamsanchez@gmail.com";
+    $destinatario = "info@teduemprende.com";
     $asunto = "Contacto desde la web";
 
     $carta = "De: $nombre \n";
@@ -17,5 +17,5 @@
 
     //ENVIANDO MENSAJE
     mail($destinatario, $asunto, $carta);
-    header('Location:mensaje_enviado.html')
+    header('Location:index.html')
 ?>

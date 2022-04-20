@@ -487,6 +487,12 @@ footer .footer_div h2{
         font-size: 3em;
         color: #fff;
     }
+
+    .banner .content p{
+        margin-top: 150px;
+        color: #fff;
+    }
+
     .row{
         flex-direction: column;
     }
@@ -544,6 +550,11 @@ footer .footer_div h2{
     .banner .content h2{
         font-size: 2.2em;
         color: #fff;
+    }
+
+    .banner .content p{
+        margin-left: 50px;
+        margin-right: 50px;
     }
 }
 
