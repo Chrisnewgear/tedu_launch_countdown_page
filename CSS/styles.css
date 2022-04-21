@@ -571,8 +571,9 @@ footer .footer_div h2{
     }
 
     .banner .content img{
-        width: 400px;
-        height: 150px;
+        width: 360px;
+        height: 140px;
+        padding: 10px 30px;
     }
 
     .formulario__mensaje{
@@ -587,10 +588,17 @@ footer .footer_div h2{
     }
 
     .banner .content p{
-        margin-left: 50px;
-        margin-right: 50px;
+        margin-left: 40px;
+        margin-right: 40px;
     }
 }
+
+@media (max-width: 320px){
+    .formulario__mensaje{
+        height: 100px;
+    }
+}
+
 
 /*=============FOOTER STYLE=============*/
 footer{
