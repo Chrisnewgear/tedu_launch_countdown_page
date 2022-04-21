@@ -1,8 +1,6 @@
 
 <?php
 
-include()
-
 error_reporting(1);
 
 function correo($correos,$nombre){
@@ -30,13 +28,13 @@ function correo($correos,$nombre){
             'ssl' => array('verify_peer' => false,'verify_peer_name' => false,'allow_self_signed' => true)
         );
   //Le decimos cual es nuestro nombre de usuario y password
-  $mail->Username ="";//debes de poner un correo de gmail que tenga configurado para aplicaciones no seguras en la parte de gmail
-  $mail->Password =""; // debes de poner la clave del correo
+  $mail->Username ="teduemprende@gmail.com";//debes de poner un correo de gmail que tenga configurado para aplicaciones no seguras en la parte de gmail
+  $mail->Password ="EmprendeconTedu2022"; // debes de poner la clave del correo
 
   //Indicamos cual es nuestra dirección de correo y el nombre que
   //queremos que vea el usuario que lee nuestro correo
-  $mail->From = "aviso@hospitalsanfrancisco.com.ec";
-  $mail->FromName = "Reserva de asistencia TEDU EMPRENDE";
+  $mail->From = "info@teduemprende.com";
+  $mail->FromName = "TEDU EMPRENDE";
 
   //el valor por defecto 10 de Timeout es un poco escaso dado que voy a usar
   //una cuenta gratuita, por tanto lo pongo a 30
@@ -50,7 +48,7 @@ function correo($correos,$nombre){
   //El cuerpo del mensaje lo ponemos en formato html, haciendo
   //que se vea en negrita
 
-  $mail->Subject = "Reserva de lanzamiento TEDU";
+  $mail->Subject = "Reserva para asistir al evento del lanzamiento digital de TEDU EMPRENDE";
   $fecha_actual = date("d-m-Y");
   $shtml="Estimado ".$nombre."<br><br>TEDU agradece su registro de asistencia, estaremos gustosos en recibirte en nuestro lanzamiento.<br><br>Tendremos grandes sorpresas.";
   $mail->msgHTML($shtml);
