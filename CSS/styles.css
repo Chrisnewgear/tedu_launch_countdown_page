@@ -574,6 +574,10 @@ footer .footer_div h2{
         width: 400px;
         height: 150px;
     }
+
+    .formulario__mensaje{
+        height: 80px;
+    }
 }
 
 @media (max-width: 480px){
