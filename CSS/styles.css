@@ -428,7 +428,6 @@ footer .footer_div h2{
     color: #fff;
 }
 
-/*========= WHATSAPP BUTTON =======*/
 .wsp-container{
     display: flex;
     flex-direction: row;
@@ -689,4 +688,12 @@ footer .footer_div p{
     margin-top: 15px;
     margin-bottom: 10px;
     font-size: 15px;
+}
+
+@media (max-width: 1920px){
+    .row .col50 .imgBx{
+        height: 400px;
+        width: 100%;
+        margin-top: 20px;
+    }
 }
