@@ -429,9 +429,9 @@ section .countdown{
     margin-top: 20px;
 }
 
-.write__mail p{
-    font-size: 15px;
-}
+    .write__mail p{
+        font-size: 15px;
+    }
 
 .write__mail a{
     text-align: center;
