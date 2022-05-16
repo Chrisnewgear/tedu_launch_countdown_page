@@ -424,6 +424,26 @@ section .countdown{
 	border: 3px solid #bb2929;
 }
 
+.write__mail {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.write__mail a{
+    text-align: center;
+    font-size: 2.5em;
+    color: #111;
+    margin: 0 10px;
+    display: inline-block;
+    transition: .5s;
+}
+
+.write__mail a:hover{
+    opacity: 1;
+    transform: translateY(-10px);
+    color: #e12a4c;
+}
+
 footer .footer_div h2{
     color: #fff;
 }
